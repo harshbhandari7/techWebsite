@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<head>
+
+<title>GyaniBaba.com</title>
+
+<link href="mycss.css" rel="stylesheet" type="text/css" />
+ <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 5000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "images/l1.jpg";
+          images[1] = "images/l2.jpg";
+          images[2] = "images/l3.jpg";
+      </script>
+
+</head>
+<body onload = "startTimer()">
+<div id="header_wrapper">
+  <div id="header">
+    
+   	<div id="site_logo">GyaniBaba.com</div>
+        
+		<div id="menu">
+      		<div id="menu_left"></div>
+            <ul>
+                  <li><a href="#" class="current">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  
+            </ul>    	
+		</div> 
+    
+    </div> 
+</div> 
+
+<div id="banner_wrapper">
+	<div id="banner">
+    
+    	<div id="banner_image">
+        	<div id="banner_image_wrapper">
+            	<img id="img" src="images/imag.jpg"/>
+<div id="left">      
+ <button type="button" onclick="displayPreviousImage()"><</button>
+</div>
+<div id="right">
+       <button type="button" onclick="displayNextImage()">></button>
+</div>
+            </div>
+        </div>
+        
+        <div id="banner_content">
+        	<div class="header_01">World of laptops </div>
+            <p>The list of top 3 laptop under 50000 is here!!!! </p>
+            
+        </div>	
+    
+    	<div class="cleaner"></div>
+    </div> 
+</div> 
+
+<div id="content_wrapper">
+	<div id="content">
+    
+    	<div id="column_w530">
+        	
+            <div class="header_02">Welcome to Gyani Baba!</div>
+            
+            <p class="em_text">Gyani Baba is a professional website which is just made to make your life simple and easy.</p>
+            
+            <p>this website contains all the tech news which you must know to be remain in technology .
+               here you will find all the tech news,reviews,new launches,specifications and all other things you can imagine...</p>
+            
+            <div class="margin_bottom_20"></div>
+            
+           
+            <div class="margin_bottom_20"></div>           
+            
+            <div class="content_section_01">
+            	We have reached the following conclusion on compairing processors,battery,graphic cards,RAM and other aspects.
+     we understand the difficulty of yours,therfore we have tried our level best to solve your problem.here are the 3 best laptop under 50000.:-) 
+            </div>
+            
+            <div class="cleaner"></div>
+        </div>
+        
+        <div id="column_w300">
+        
+        	<div class="header_03">Top 3 laptops</div>
+            
+            <div class="column_w300_section_01">
+            	<div class="news_image_wrapper">
+                	<img src="images/l1.jpg" alt="image" />
+                </div>
+                
+                <div class="news_content">
+                	
+                    <div class="header_04"><a href="lapppy1.html">Dell Inspiron 15 3543 Gaming Laptop</a></div>
+                    
+				</div>
+                                
+                <div class="cleaner"></div>
+            </div>
+            
+            <div class="column_w300_section_01 even_color">
+            	<div class="news_image_wrapper">
+                	<img src="images/l2.jpg" alt="image" />
+                </div>
+                
+                <div class="news_content">
+                	
+                    <div class="header_04"><a href="lapppy2.html">Dell new inspiron 15 5558 laptop</a></div>
+                    
+				</div>
+                                
+                <div class="cleaner"></div>
+            </div>
+            
+            <div class="column_w300_section_01">
+            	<div class="news_image_wrapper">
+                	<img src="images/l3.jpg" alt="image" />
+                </div>
+                
+                <div class="news_content">
+                	
+                    <div class="header_04"><a href="lapppy3.html">HP pavilion 15-ab205tx laptop</a></div>
+                   
+				</div>
+                                
+                <div class="cleaner"></div>
+            </div>
+            
+            <div class="cleaner"></div>
+        </div>
+    
+    	<div class="cleaner"></div>
+    </div> 
+</div> 
+
+<div id="footer_wrapper">
+
+	<div id="footer">
+    	
+        <div class="section_w180">
+        	<div class="header_05">Smartphones</div>
+            
+        </div>
+        
+        <div class="section_w180">
+        	<div class="header_05">tablets</div>
+            
+            </div>
+        </div>
+                
+        
+        
+        <div class="margin_bottom_20"></div>
+        
+        <div class="cleaner"></div>
+    </div> 
+   </div> 
+</body>
+</html>
